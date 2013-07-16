@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My first Bitstarter</title>
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
@@ -51,13 +50,21 @@
 
 /*      div {border: 1px solid gray;}
 */
-      .heading .subheading {
+      .heading, .subheading {
         font-family: 'Ubuntu','Helvetica', 'Arial', 'sans-serif';
         text-align: center;
 
       }
+      .subheading {
+        background-color: #aaaaaa;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .section1, .section2 {
+
+      }
       p.lead {
-        padding-top: 15px;
+        padding: 10%;
         font-size: 24px;
         line-height: 30px;
       }
@@ -75,6 +82,15 @@
         padding: 2% 0%;
       }
 
+      .flip-horizontal {
+      -moz-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      transform: scaleX(-1);
+      -ms-filter: fliph; /*IE*/
+       filter: fliph; /*IE*/
+      }
+
       .actions {
         background-color: #343434;
         padding: 3% 0%;
@@ -83,15 +99,19 @@
       .video, .thermometer, .order, .social, .statistics{
         text-align: center;
       } 
+ 
       .statistics h3, .statistics p {
         color: white;
       }
 
       /*Marketing copy and footer*/
       .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%
+        padding: 2.5%;
+/*        padding-top: 2.5%;
+        padding-bottom: 2.5%*/
         text-align: justify;
+        background-color: #aaaaaa;
+        border-radius: 10px; 
       }
 
       .asset {
@@ -150,24 +170,28 @@
 
       <div class="row-fluid heading">
         <div class="span12">
-            <h1>Bara fantasin sätter gränser</h1>
+            <h1>MAKE YOUR DREAMS IN STONE</h1>
         </div>  
       </div>
-      <div class="row-fluid subheading">
-        <div class="span12">
-            <p class="lead"> One sentence description</p>
-        </div>
-        <div class="row-fluid pitch">
-          <div class="span5 offset1 video">
-              <img class="img-polaroid" src="http://placehold.it/480x300"></img>
+      <div class="row-fluid">
+            <div class="span5 offset1 subheading">
+
+            <p class="lead"> What if you could make a stone sculpture and choose your own motif?<br> And that it would cost the same amount independetly of what motive</p>
           </div>
+          <div class="span5 first-image pagination-center">
+          <img class="img-polaroid flip-horizontal" src="http://i.istockimg.com/file_thumbview_approve/3757394/2/stock-photo-3757394-winged-gargoyle.jpg"</img>
+          </div>
+        </div>
+  
+    <div class="row-fluid pitch">
+
           <!-- a new 'actions' div to contain statistics order and share button -->
-    <div class="span5 actions">
+    <div class="span6 offset3 actions">
       <div class="span8 offset2">
         <div class="statistics">
           <div class="span4">
             <div class="linediv-l">
-              <h3>100</h3> <p>backers</p>
+              <h3>1000</h3> <p>backers</p>
             </div>
           </div>          
           <div class="span4">
@@ -206,31 +230,23 @@
 
 <div class="row-fluid section1">
     <div class="span5 offset1 asset">
-      <img src="http://placehold.it/480x300" alt="" class="polaroid">
+      <img src="https://nis-storage-thumbnail-production.s3.amazonaws.com/49/thumbs/10202_large.jpg" alt="" class="polaroid">
     </div>
     <div class="span5 copy">
           <p>
-          Lorem ipsum dolor sit amet, dolore efficiantur consequuntur his cu. No mea facer iusto, sed ea unum iisque nusquam. At dico invidunt qui. Pro an feugiat impedit nominati.
-
-          Ei aeque ceteros sensibus qui, aeterno scaevola ut sea, sed idque audiam labores id. Sapientem imperdiet ius ex, in per illum graece utamur. Ad vix admodum offendit mediocritatem. Ea vis postulant convenire tractatos, at commodo feugait sea. Putant labitur voluptua sed eu.
-
-          Posse altera mentitum his te, ea quas vivendum referrentur vix, albucius democritum definitiones at sit.
-          </p>
+          By using 3D scanners or a 3D-designer we are able to make a three-dimensional drawing. 
     </div>
 </div>
 <div class="row-fluid section2">
   <div class="span5 offset1 copy copy-right">
           <p>
-          Lorem ipsum dolor sit amet, dolore efficiantur consequuntur his cu. No mea facer iusto, sed ea unum iisque nusquam. At dico invidunt qui. Pro an feugiat impedit nominati.
-
-          Ei aeque ceteros sensibus qui, aeterno scaevola ut sea, sed idque audiam labores id. Sapientem imperdiet ius ex, in per illum graece utamur. Ad vix admodum offendit mediocritatem. Ea vis postulant convenire tractatos, at commodo feugait sea. Putant labitur voluptua sed eu.
-
-          Posse altera mentitum his te, ea quas vivendum referrentur vix, albucius democritum definitiones at sit.
+          This drawing is then translated inte machine language and is read by a 5D-CNC router! 
+          The machine doesn't care about the motive of the drawing it just process the code.
           <p>
   </div>
 
   <div class="span5 asset">
-    <img src="http://placehold.it/480x300" alt="" class="polaroid">
+    <img src="http://image.shutterstock.com/display_pic_with_logo/208258/116445454/stock-photo-a-cnc-milling-machine-milling-heads-in-metal-industry-116445454.jpg" alt="" class="polaroid">
   </div>
 </div>
 
@@ -243,12 +259,12 @@
           <div class="accordion-group">
             <div class="accordion-heading">
               <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion2"class="accordion-toggle">
-                What does FAQ stands for
+                What would the cost per item be?
               </a>
             </div>
             <div id="collapseOne" class="accordion-body collapse  ">
               <div class="accordion-inner">
-                Frequently Asked Questions!
+                You just choose material, size and drawing. And you pay for the material plus a fixed sum for cutting. 
               </div>
 
             </div>
@@ -256,13 +272,13 @@
           <div class="accordion-group">
             <div class="accordion-heading">
               <a href="#collapseTwo" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"> 
-              What is a Frequently asked question?
-
+              Can I have my statue in any material
+  
               </a>
             </div>
               <div id="collapseTwo" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  A question that is commonly asked by users
+                Yes, but it will cost you more. We recommend Marble! 
                 </div>
               </div>
             </div>
